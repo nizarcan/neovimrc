@@ -95,12 +95,13 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
-    config = function()
-      vim.cmd.colorscheme 'onedark'
-    end,
+    -- No Clown Fiesta theme for those times that I get incredibly boring
+    'aktersnurra/no-clown-fiesta.nvim'
+  },
+
+  {
+    -- Kanagawa theme for the times that I just love myself and love living my life
+    "rebelot/kanagawa.nvim"
   },
 
   {
