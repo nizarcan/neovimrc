@@ -13,6 +13,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+  'github/copilot.vim',
+
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
