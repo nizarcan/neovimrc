@@ -16,3 +16,6 @@ vim.keymap.set('n', '<leader>dq', vim.diagnostic.setloclist, { desc = 'Open diag
 -- Copilot keymaps
 vim.g.copilot_no_tab_map = true
 vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+
+-- Commentary keymaps
+vim.keymap.set('v', '<leader>/', 'gc', { desc = 'Comment selection' })
