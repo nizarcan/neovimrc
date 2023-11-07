@@ -31,7 +31,7 @@ vim.keymap.set("n", "<leader>do", function() require("dap").step_out() end, { de
 vim.keymap.set("n", "<leader>dO", function() require("dap").step_over() end, { desc = "Step Over" })
 vim.keymap.set("n", "<leader>dp", function() require("dap").pause() end, { desc = "Pause" })
 vim.keymap.set("n", "<leader>dr", function() require("dap").repl.toggle() end, { desc = "Toggle REPL" })
-vim.keymap.set("n", "<leader>ds", function() require("dap").session() end, { desc = "Session" })
-vim.keymap.set("n", "<leader>dt", function() require("dap").terminate() end, { desc = "Terminate" })
+vim.keymap.set("n", "<leader>des", function() require("dap").session() end, { desc = "Session" })
+vim.keymap.set("n", "<leader>det", function() require("dap").terminate() end, { desc = "Terminate" })
 vim.keymap.set("n", "<leader>dw", function() require("dap.ui.widgets").hover() end, { desc = "Widgets" })
 
