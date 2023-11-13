@@ -35,3 +35,15 @@ vim.keymap.set("n", "<leader>des", function() require("dap").session() end, { de
 vim.keymap.set("n", "<leader>det", function() require("dap").terminate() end, { desc = "Terminate" })
 vim.keymap.set("n", "<leader>dw", function() require("dap.ui.widgets").hover() end, { desc = "Widgets" })
 
+
+-- Scratch keymaps
+vim.keymap.set("n", "<leader>scr", "<cmd>Scratch<cr>")
+vim.keymap.set("n", "<leader>sco", "<cmd>ScratchOpen<cr>")
+
+-- Motion keymaps
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- Search keymaps 
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
