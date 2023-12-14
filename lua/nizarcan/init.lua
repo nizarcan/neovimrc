@@ -25,5 +25,8 @@ require("nizarcan.colorscheme")
 -- Git Blame
 require("nizarcan.git-blame")
 
+-- DAP Config
+require("nizarcan.dap")
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
