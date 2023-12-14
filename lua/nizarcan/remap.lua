@@ -47,3 +47,6 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- Search keymaps 
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+
+-- Telescope File Browser
+vim.keymap.set("n", "<leader>fb", "<cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>", { noremap = true})
