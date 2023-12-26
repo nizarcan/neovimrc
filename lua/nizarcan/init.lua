@@ -22,9 +22,6 @@ require("nizarcan.cmp")
 -- Color Scheme
 require("nizarcan.colorscheme")
 
--- Git Blame
-require("nizarcan.git-blame")
-
 -- DAP Config
 require("nizarcan.dap")
 
