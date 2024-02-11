@@ -111,6 +111,12 @@ require('lazy').setup({
   },
 
   {
+    -- Catppuccin theme for the times that I just love myself and love living my life
+    "catppuccin/nvim",
+    name = "catppuccin"
+  },
+
+  {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     -- See `:help lualine.txt`
