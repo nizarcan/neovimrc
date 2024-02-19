@@ -48,4 +48,4 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Telescope File Browser
-vim.keymap.set("n", "<leader>fb", "<cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>", { noremap = true})
+vim.keymap.set("n", "<leader>fw", "<cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>", { noremap = true})

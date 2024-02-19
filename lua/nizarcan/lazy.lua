@@ -214,7 +214,7 @@ require('lazy').setup({
               "theHamsta/nvim-dap-virtual-text",
               opts = {},
           },
-      
+
       -- mason.nvim integration
       {
         "jay-babu/mason-nvim-dap.nvim",
@@ -251,8 +251,6 @@ require('lazy').setup({
     end,
   },
 
-},
-
-  -- { import = 'custom.plugins' },
+  },
 }, {})
 
