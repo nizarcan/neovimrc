@@ -35,10 +35,9 @@ vim.keymap.set("n", "<leader>des", function() require("dap").session() end, { de
 vim.keymap.set("n", "<leader>det", function() require("dap").terminate() end, { desc = "Terminate" })
 vim.keymap.set("n", "<leader>dw", function() require("dap.ui.widgets").hover() end, { desc = "Widgets" })
 
-
--- Scratch keymaps
-vim.keymap.set("n", "<leader>scr", "<cmd>Scratch<cr>")
-vim.keymap.set("n", "<leader>sco", "<cmd>ScratchOpen<cr>")
+-- Tmux session keymaps
+vim.keymap.set("n", "<C-f>", "<cmd>terminal tmux-session<cr>a", {noremap = true})
+vim.keymap.set("i", "<C-f>", "<cmd>terminal tmux-session<cr>", {noremap = true})
 
 -- Motion keymaps
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
