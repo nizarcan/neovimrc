@@ -13,8 +13,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-  -- Commentary
-  'tpope/vim-commentary',
+  -- Copilot(damn it...)
+  'github/copilot.vim',
+
 
   -- Git related plugins
   'tpope/vim-fugitive',
@@ -56,8 +57,41 @@ require('lazy').setup({
     },
   },
 
+  'echasnovski/mini.icons',
+
   -- Useful plugin to show you pending keybinds.
-  { 'folke/which-key.nvim', opts = {} },
+  { 
+    'folke/which-key.nvim', 
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    opts = {
+      plugins = {
+        marks = true,
+        registers = true,
+        spelling = {
+          enabled = true,
+          suggestions = 20,
+        },
+        presets = {
+          operators = true,
+          motions = true,
+          text_objects = true,
+          windows = true,
+          nav = true,
+          z = true,
+          g = true,
+        },
+      },
+      win = {
+        border = "single",
+        position = "bottom",
+      },
+      disable = {
+        filetypes = {},
+        buftypes = {},
+        health_check = true  -- disable the health check on startup
+      }
+    }
+  },
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -136,7 +170,7 @@ require('lazy').setup({
     opts = {},
   },
 
-  -- "gc" to comment visual regions/lines
+  -- "tc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
   -- Fuzzy Finder (files, lsp, etc)
