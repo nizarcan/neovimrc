@@ -18,13 +18,8 @@ require('lazy').setup({
 
 
   -- Git related plugins
-  {
-    'tpope/vim-fugitive',
-    event = 'VeryLazy',
-    dependencies = {
-      'tpope/vim-rhubarb', -- Github support
-    },
-  },
+  'tpope/vim-fugitive',
+  'tpope/vim-rhubarb',
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
